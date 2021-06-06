@@ -20,3 +20,6 @@ This class is responsible for summarization and evaluation of that summary . Thi
 - SentenceEmbedding object(from above) and the text Tokenizer (that tokenize the text into sentences).
 - Its evaluation method uses sentence blue score to compare GT and predicted values .
 
+# Results
+because the ground truth summay is only one sentence in the data i used , and the predicted have length of 3 the bleu score is not that high but is was acceptable given that difference lenghts . I got around 0.5 blue score.
+
