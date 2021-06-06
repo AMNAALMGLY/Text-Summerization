@@ -12,9 +12,11 @@ SentenceEmbedding:
 This class is responsible for providing sentence  embedding . The first method  finds the words embedding matrix by using a pre-trained word embedding file and load into a dictionary.The other method average those word embedding along word axis to find the whole sentence embedding. 
 This class expects the following attributes :
 - The location of the file of  the pretrained model  and the size of the embedding .Note : I used glove with 25 embed_size & got good results.you can try fasttext instead!.
-- To download a pre-trained word embedding file for glove you can use this [link](https://zenodo.org/record/3237458/files/glove.twitter.27B.25d.txt.gz?download=1)
+- To download a pre-trained word embedding file for glove you can use this [link](https://zenodo.org/record/3237458/files/glove.twitter.27B.25d.txt.gz?download=1).
+
 Summarizer
 
 This class is responsible for summarization and evaluation of that summary . This class expects to get the following when intializing it:
 - SentenceEmbedding object(from above) and the text Tokenizer (that tokenize the text into sentences).
-its evaluation method uses sentence blue score to compare GT and predicted values .
+- Its evaluation method uses sentence blue score to compare GT and predicted values .
+
